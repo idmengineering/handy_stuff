@@ -56,4 +56,4 @@ The access token has expiry information, etc. and there are functions for refres
 
 I avoid JS for OAuth, but I'm pretty sure that's just a personal preference. There are [good javascript libraries](https://github.com/andreassolberg/jso) as well.
 
-N.B. I built this quickly off of my stack overflow answer to [this](https://stackoverflow.com/questions/58438389/openid-connect-with-php-or-java-script/58452437#58452437) question.
+*Note: Based off of [this](https://stackoverflow.com/questions/58438389/openid-connect-with-php-or-java-script/58452437#58452437) StackOverflow answer of mine.*
