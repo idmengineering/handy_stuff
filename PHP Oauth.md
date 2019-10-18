@@ -1,4 +1,4 @@
-My firm usually recommends [PHPLeague's OAuth2 client](https://github.com/thephpleague/oauth2-client) for PHP integrations. There's is sample code in the README.md, but basically
+Our firm usually recommends [PHPLeague's OAuth2 client](https://github.com/thephpleague/oauth2-client) for PHP integrations. There's is sample code in the README.md, but basically
 
  - Include the relevant Client Key and Secret in the `$Provider` element, i.e.
  
