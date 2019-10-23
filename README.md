@@ -4,4 +4,4 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## OAuth ##
 
-- October 18th, 2019 -- [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-php-oauth-client/) [ **[Github Link]** ](handy_stuff/blob/master/PHP%20Oauth.md)
+- October 18th, 2019 -- [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-php-oauth-client/) [ **[Github Link]** ](PHP%20OAuth.md)
