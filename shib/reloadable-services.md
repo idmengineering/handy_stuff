@@ -35,17 +35,15 @@ To do this, ensure that the IP addresses are listed within `/opt/shibboleth-idp/
 
 The following services can be reloaded:
 
-| Bean                                           | Reloadable Service `id`                    | Function                                                                |
-|------------------------------------------------|--------------------------------------------|-------------------------------------------------------------------------|
-| shibboleth.RelyingPartyResolverResources       | shibboleth.RelyingPartyResolverService     | RelyingPartyConfiguration resources for a new or migrated installation. |
-| shibboleth.LegacyRelyingPartyResolverResources | shibboleth.RelyingPartyResolverService     | RelyingPartyConfiguration using a deprecated V2 relying-party.xml file. |
-| shibboleth.MetadataResolverResources           | shibboleth.MetadataResolverService         | MetadataConfiguration resources.                                        |
-| shibboleth.AttributeResolverResources          | shibboleth.AttributeResolverService        | AttributeResolverConfiguration resources.                               |
-| shibboleth.AttributeFilterResources            | shibboleth.AttributeFilterService          | AttributeFilterConfiguration resources.                                 |
-| shibboleth.NameIdentifierGenerationResources   | shibboleth.NameIdentifierGenerationService | NameIDGenerationConfiguration resources.                                |
-| shibboleth.AccessControlResources              | shibboleth.ReloadableAccessControlService  | AccessControlConfiguration resources.                                   |
-| shibboleth.MessageSourceResources              | N/A                                        | Internationalizable user interface messages.                            |
-| shibboleth.CASServiceRegistryResources    | shibboleth.ReloadableCASServiceRegistry    | Resources containing ServiceRegistry beans to be reloaded.              |
-
+| Reloadable Service `id`                    | Function                                                                |
+|--------------------------------------------|-------------------------------------------------------------------------|
+| shibboleth.RelyingPartyResolverService     | RelyingPartyConfiguration resources for a new or migrated installation. |
+| shibboleth.RelyingPartyResolverService     | RelyingPartyConfiguration using a deprecated V2 relying-party.xml file. |
+| shibboleth.MetadataResolverService         | MetadataConfiguration resources.                                        |
+| shibboleth.AttributeResolverService        | AttributeResolverConfiguration resources.                               |
+| shibboleth.AttributeFilterService          | AttributeFilterConfiguration resources.                                 |
+| shibboleth.NameIdentifierGenerationService | NameIDGenerationConfiguration resources.                                |
+| shibboleth.ReloadableAccessControlService  | AccessControlConfiguration resources.                                   |
+| shibboleth.ReloadableCASServiceRegistry    | Resources containing ServiceRegistry beans to be reloaded.              |
 
 ### Common Issues ###
