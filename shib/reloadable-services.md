@@ -2,7 +2,7 @@
 
 Shibboleth Identity Provider Version 3 introduced the ability to reload individual services within the Shibboleth framework. Prior to IdP v3, if you wanted to onboard a new Service Provider by adding new `<MetadataProvider>` and `<RelyingParty>` elements, you would be required to restart the servlet container. Now, nearly every class of change that you may need to make to the Shib IdP can be done without restarting Jetty.
 
-## Reloadable Services ##
+### Reloadable Services ###
 
 There are two functional methods to achieve this, either a direct request to the administrative handler URL:
 
@@ -16,9 +16,9 @@ or by utilizing the included sample shell script which will make this call for y
 $ /opt/shibboleth-idp/bin/reload-service.sh -id [SOME SERVICE]
 ~~~~
 
-In each case `[SOME SERVICE]` represents the name of the Shibboleth service that you would like to reload, i.e. one of the service identifiers (`id`) listed [below](##Services).
+In each case `[SOME SERVICE]` represents the name of the Shibboleth service that you would like to reload, i.e. one of the service identifiers (`id`) listed [below](###Services).
 
-## Access Control ##
+### Access Control ###
 
 In order to be able to make requests to the reloadable services identified above, you *must* ensure that you have white-listed the IP address of the host making the call. In the case of the `reload-service.sh` script, that includes ensuring that the interface of the IdP server itself has been whitelisted.
 
@@ -31,7 +31,7 @@ To do this, ensure that the IP addresses are listed within `/opt/shibboleth-idp/
 </entry>
 ~~~~
 
-## Services ##
+### Services ###
 
 The following services can be reloaded:
 
@@ -45,7 +45,7 @@ The following services can be reloaded:
 | shibboleth.ReloadableAccessControlService  | AccessControlConfiguration resources.                                   |
 | shibboleth.ReloadableCASServiceRegistry    | Resources containing ServiceRegistry beans to be reloaded.              |
 
-## Example: Onboarding a new SP ##
+### Example: Onboarding a new SP ###
 
 In the following examples, we will only use `reload-service.sh`, however you can easily adjust the call to the HTTP `GET` as above.
 
@@ -73,4 +73,18 @@ Lastly, presuming you need to configure a `<RelyingPartyOverride>` for this enti
 Configuration reloaded for 'shibboleth.RelyingPartyResolverService'
 ~~~~
 
-## Common Issues ##
+### Common Issues ###
+
+The most common issue we encounter with reloadable services is that calls to `reload-service.sh` fail, either because [Access Control](###Access Control) was not established properly, or because the IDP cannot properly make calls to `http(s)://localhost/idp` which is the default `IDP_BASE_URL` environment variable.
+
+Setting up `IDP_BASE_URL` within your Shibboleth service's startup (typically `/etc/default/jetty`) script usually resolves this issue. For example, a typical startup script might need to look something like this:
+
+~~~~
+export INST_BASE=/opt
+export JAVA_HOME=$INST_BASE/java
+export JAVA=$JAVA_HOME/bin/java
+export JETTY_HOME=$INST_BASE/jetty
+export JETTY_BASE=$INST_BASE/idp_jetty
+export IDP_HOME=$INST_BASE/shibboleth-idp
+export IDP_BASE_URL=http://idp.example.org/idp
+~~~~
