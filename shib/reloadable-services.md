@@ -75,7 +75,7 @@ Configuration reloaded for 'shibboleth.RelyingPartyResolverService'
 
 ### Common Issues ###
 
-The most common issue we encounter with reloadable services is that calls to `reload-service.sh` fail, either because [Access Control](#Access Control) was not established properly, or because the IDP cannot properly make calls to `http(s)://localhost/idp` which is the default `IDP_BASE_URL` environment variable.
+The most common issue we encounter with reloadable services is that calls to `reload-service.sh` fail, either because [Access Control](#Access%20Control) was not established properly, or because the IDP cannot properly make calls to `http(s)://localhost/idp` which is the default `IDP_BASE_URL` environment variable.
 
 Setting up `IDP_BASE_URL` within your Shibboleth service's startup (typically `/etc/default/jetty`) script usually resolves this issue. For example, a typical startup script might need to look something like this:
 
