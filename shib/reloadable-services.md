@@ -38,7 +38,6 @@ The following services can be reloaded:
 | Reloadable Service `id`                    | Function                                                                |
 |--------------------------------------------|-------------------------------------------------------------------------|
 | shibboleth.RelyingPartyResolverService     | RelyingPartyConfiguration resources for a new or migrated installation. |
-| shibboleth.RelyingPartyResolverService     | RelyingPartyConfiguration using a deprecated V2 relying-party.xml file. |
 | shibboleth.MetadataResolverService         | MetadataConfiguration resources.                                        |
 | shibboleth.AttributeResolverService        | AttributeResolverConfiguration resources.                               |
 | shibboleth.AttributeFilterService          | AttributeFilterConfiguration resources.                                 |
@@ -46,4 +45,32 @@ The following services can be reloaded:
 | shibboleth.ReloadableAccessControlService  | AccessControlConfiguration resources.                                   |
 | shibboleth.ReloadableCASServiceRegistry    | Resources containing ServiceRegistry beans to be reloaded.              |
 
-### Common Issues ###
+## Example: Onboarding a new SP ##
+
+In the following examples, we will only use `reload-service.sh`, however you can easily adjust the call to the HTTP `GET` as above.
+
+After you've added the SP's `<MetadataProvider>` element to `/opt/shibboleth-idp/conf/metadata-providers.xml` you should first reload that service:
+
+~~~~
+[root@idp.example.org shibboleth-idp]# ./bin/reload-service.sh -id shibboleth.MetadataResolverService
+
+Configuration reloaded for 'shibboleth.MetadataResolverService'
+~~~~
+
+Then, after you have added an appropriate attribute filter policy for this entity in `attribute-filter.xml`, you should reload *that* service:
+
+~~~~
+[root@idp.example.org shibboleth-idp]# ./bin/reload-service.sh -id shibboleth.AttributeFilterService
+
+Configuration reloaded for 'shibboleth.AttributeFilterService'
+~~~~
+
+Lastly, presuming you need to configure a `<RelyingPartyOverride>` for this entity to adjust the particulars of the single sign on integration, you should reload that service:
+
+~~~~
+[root@idp.example.org shibboleth-idp]# ./bin/reload-service.sh -id shibboleth.RelyingPartyResolverService
+
+Configuration reloaded for 'shibboleth.RelyingPartyResolverService'
+~~~~
+
+## Common Issues ##
