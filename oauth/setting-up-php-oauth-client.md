@@ -1,4 +1,4 @@
-#Setting up a PHP OAuth Client#
+# Setting up a PHP OAuth Client #
 
 Our firm usually recommends [PHPLeague's OAuth2 client](https://github.com/thephpleague/oauth2-client) for PHP integrations. There's is sample code in the README.md, but basically
 
