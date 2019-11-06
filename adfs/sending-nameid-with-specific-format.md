@@ -1,4 +1,4 @@
-# Releasing NameID with a Specified Format in ADFS #
+# Releasing NameID with a Specified Format #
 
 A frequent task for ADFS Identity Provider administration is onboarding a new Relying Party Trust and releasing to that relying party a particular set of attributes. Frequently, service providers will request a particular attribute take the form of a Name Identifier (NameID), formatted accordingly.
 
