@@ -30,10 +30,10 @@ log4j.appender.native_log.layout.ConversionPattern=%d{%Y-%m-%d %H:%M:%S} %p %c %
 
 and Shibboleth will write this information into the `native.log` file of your specification. This is the default behavior on Linux-based installs, but isn't done on Windows because this alone is insufficient. You must also ensure that the file you want Shibboleth to write to is given writable by the IIS service account, `IUSR`:
 
-<div style="text-align: center;"><img src="https://idmengineering.com/screenshots/2019-11-20%2010_01_16.png"></div>
+<p align="center"><img src="https://idmengineering.com/screenshots/2019-11-20%2010_01_16.png"></p>
 
 The above screenshot demonstrates the permissions that we utilize on one of our dev IIS servers which is writing logs to `native.log`.
 
 ---
 
-Need help troubleshooting Shib SP on IIS? [Give us a call!](https://idmengineering.com/contact) We'd be glad to help! 
+Need help troubleshooting Shib SP on IIS? [Give us a call!](https://idmengineering.com/contact) We'd be glad to help!
