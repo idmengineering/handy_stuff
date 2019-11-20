@@ -33,7 +33,3 @@ and Shibboleth will write this information into the `native.log` file of your sp
 <p align="center"><img src="https://idmengineering.com/screenshots/2019-11-20%2010_01_16.png"></p>
 
 The above screenshot demonstrates the permissions that we utilize on one of our dev IIS servers which is writing logs to `native.log`.
-
----
-
-Need help troubleshooting Shib SP on IIS? [Give us a call!](https://idmengineering.com/contact) We'd be glad to help!
