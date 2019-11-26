@@ -6,23 +6,23 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## ADFS ##
 
-- November 6th, 2019 -- [Releasing NameID with a Specified Format](http://idmengineering.com/adfs-sending-nameid-with-specific-format/) [ **[Github Link]** ](adfs/sending-nameid-with-specific-format.md)
+- November 6th, 2019 &ndash; [Releasing NameID with a Specified Format](http://idmengineering.com/adfs-sending-nameid-with-specific-format/) [ **[Github Link]** ](adfs/sending-nameid-with-specific-format.md)
 
 ---
 
 ## OAuth ##
 
-- October 18th, 2019 -- [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-php-oauth-client/) [ **[Github Link]** ](oauth/setting-up-php-oauth-client.md)
+- October 18th, 2019 &ndash; [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-php-oauth-client/) [ **[Github Link]** ](oauth/setting-up-php-oauth-client.md)
 
 ---
 
 ## Shibboleth ##
 
-- November 20th, 2019 -- [Configuring native.log for Shibboleth SP3 on IIS](https://idmengineering.com/shibboleth-iis-native-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/iis-native-logger.md)
+- November 20th, 2019 &ndash; [Configuring native.log for Shibboleth SP3 on IIS](https://idmengineering.com/shibboleth-iis-native-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/iis-native-logger.md)
 
-- November 8th, 2019 -- [LDAP SSL/TLS Config for Shibboleth IdP](https://idmengineering.com/ldap-ssl-tls-config-shib-idp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/ldap-ssl-tls-config-shib-idp.md)
+- November 8th, 2019 &ndash; [LDAP SSL/TLS Config for Shibboleth IdP](https://idmengineering.com/ldap-ssl-tls-config-shib-idp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/ldap-ssl-tls-config-shib-idp.md)
 
-- October 24th, 2019 -- [Configuring Reloadable Services for Shibboleth IdP](https://idmengineering.com/configuring-reloadable-services-for-shibboleth/) [ **[Github Link]** ](shib/reloadable-services.md)
+- October 24th, 2019 &ndash; [Configuring Reloadable Services for Shibboleth IdP](https://idmengineering.com/configuring-reloadable-services-for-shibboleth/) [ **[Github Link]** ](shib/reloadable-services.md)
 
 ---
 
