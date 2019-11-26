@@ -18,7 +18,7 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## Shibboleth ##
 
-- November 20th, 2019 &ndash; [Configuring native.log for Shibboleth SP3 on IIS](https://idmengineering.com/shibboleth-iis-native-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/iis-native-logger.md)
+- November 20th, 2019 &ndash; [Configuring native.log for Shibboleth SP on IIS](https://idmengineering.com/shibboleth-iis-native-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/iis-native-logger.md)
 
 - November 8th, 2019 &ndash; [LDAP SSL/TLS Config for Shibboleth IdP](https://idmengineering.com/ldap-ssl-tls-config-shib-idp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/ldap-ssl-tls-config-shib-idp.md)
 
