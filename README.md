@@ -23,3 +23,9 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 - November 8th, 2019 -- [LDAP SSL/TLS Config for Shibboleth IdP](https://idmengineering.com/ldap-ssl-tls-config-shib-idp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/ldap-ssl-tls-config-shib-idp.md)
 
 - October 24th, 2019 -- [Configuring Reloadable Services for Shibboleth IdP](https://idmengineering.com/configuring-reloadable-services-for-shibboleth/) [ **[Github Link]** ](shib/reloadable-services.md)
+
+---
+
+#### Miscellaneous Cool Stuff from Our Staff ####
+
+- [SSO Support for Busy IT Admins](https://idmengineering.com/sso-support-for-busy-it-admins/) -- Series of blog posts about best-practices to undertake when you're responsible for a Single Sign-On environment.
