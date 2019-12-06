@@ -28,4 +28,4 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 #### Miscellaneous Cool Stuff from Our Staff ####
 
-- [SSO Support for Busy IT Admins](https://idmengineering.com/sso-support-for-busy-it-admins/) &mdash; Series of blog posts about best-practices to undertake when you're responsible for a Single Sign-On environment.
+- [SSO Support for Busy IT Admins](https://idmengineering.com/sso-support-for-busy-it-admins/) &mdash; Series of blog posts about best-practices to undertake when you're responsible for a Single Sign-On environment. See also: [Part 2](https://idmengineering.com/sso-support-for-busy-it-admins-2-the-lab/)
