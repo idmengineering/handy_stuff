@@ -26,6 +26,12 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ---
 
+## SimpleSAMLphp ##
+
+- December 31st, 2019 &ndash; [Configuring SimpleSAMLphp Logging](https://idmengineering.com/configuring-simplesamlphp-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/simplesamlphp/ssp-logging-guide.md)
+
+---
+
 #### Miscellaneous Cool Stuff from Our Staff ####
 
 - [SSO Support for Busy IT Admins](https://idmengineering.com/sso-support-for-busy-it-admins/) &mdash; Series of blog posts about best-practices to undertake when you're responsible for a Single Sign-On environment. See also: [Part 2](https://idmengineering.com/sso-support-for-busy-it-admins-2-the-lab/), [Part 3](https://idmengineering.com/sso-support-for-busy-it-admins-3-finding-help-when-you-need-it-desperately/), and [Part 4](https://idmengineering.com/sso-support-for-busy-it-admins-4-monitoring/)
