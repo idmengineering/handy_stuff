@@ -10,6 +10,12 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ---
 
+## CAS ##
+
+- January 10th, 2020 &ndash; [Configuring the CAS Management Webapp](https://idmengineering.com/configuring-the-cas-management-webapp/) [ **[Github Link]** ](cas/cas-management-overlay.md)
+
+---
+
 ## OAuth ##
 
 - October 18th, 2019 &ndash; [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-php-oauth-client/) [ **[Github Link]** ](oauth/setting-up-php-oauth-client.md)
