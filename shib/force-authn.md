@@ -2,7 +2,7 @@
 
 Single sign-on (SSO) allows users to authenticate once against an Identity Provider (IdP), and get "automatically" logged into one or more Service Providers (SPs), without need to re-authenticate for a period of time determined by the length of the IdP's "session" (often taking the form of a cookie stored in the user's browser).
 
-Some services require an [additional layer of security](https://spaces.at.internet2.edu/display/InCFederation/2013/12/08/ForceAuthn+or+Not). They require the user to enter their login and password every time they enter the application. This is typically due to the nature of the application - i.e. higher-risk data like payroll - and hence the SP can send a SAML AuthnRequest with a special "forceAuthn" flag, like so:
+Some services require an [additional layer of security](https://spaces.at.internet2.edu/display/InCFederation/2013/12/08/ForceAuthn+or+Not). They require the user to enter their login and password every time they enter the application. This is typically due to the nature of the application - i.e. higher-risk data like payroll - and hence the SP can send a SAML AuthnRequest with a special `forceAuthn` flag, like so:
 
 ~~~~
 <samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
