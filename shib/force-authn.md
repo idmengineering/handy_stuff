@@ -1,4 +1,4 @@
-# forceAuthn with Shibboleth SP
+# Forced Authentication with Shibboleth SP
 
 Single sign-on (SSO) allows users to authenticate once against an Identity Provider (IdP), and get "automatically" logged into one or more Service Providers (SPs), without need to re-authenticate for a period of time determined by the length of the IdP's "session" (often taking the form of a cookie stored in the user's browser).
 
