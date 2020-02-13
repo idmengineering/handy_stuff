@@ -8,6 +8,8 @@ Logging on Shibboleth IdP is implemented via an abstract layer ([SLF4J](http://s
 
 Logging is configured in `%{idp.home}/conf/logback.xml`, where `%{idp.home}` is the location where Shibboleth IdP is installed (typically, and by default, `/opt/shibboleth-idp`). Importantly, you don't usually need to adjust this file unless you want to make specific changes to the logging constructs, e.g. changing the format of the logged strings. Most of the major settings you'll need to adjust can be edited from `%{idp.home}/conf/idp.properties`.
 
+#### Logging Options for `idp.properties`
+
 | variable                | default      | function                                                    |
 |-------------------------|--------------|-------------------------------------------------------------|
 | idp.loghistory          | 180          | Number of days of logs to keep                              |
@@ -22,9 +24,28 @@ Logging is configured in `%{idp.home}/conf/logback.xml`, where `%{idp.home}` is 
 | idp.loglevel.container  | ERROR        | Log level for Tomcat/Jetty (very chatty)                    |
 | idp.loglevel.xmlsec     | INFO         | Set to DEBUG for low-level XML Signing/Encryption logging   |
 
+#### "Debug" Logging
 
+When we say "turn up logging to DEBUG" we really mean that you should adjust one or more of the above properties in order to see more useful information. There's no fixed set, but in general:
 
+- If you're doing *any kind of debugging* you should set `idp.loglevel.idp = DEBUG`
+- If you want to see the actual SAML assertions, you should use a combination such as:
 
+  ~~~
+  idp.loglevel.idp = DEBUG
+  idp.loglevel.messages = DEBUG
+  idp.loglevel.opensaml = DEBUG
+  idp.loglevel.encryption = DEBUG
+  ~~~
+
+- If you're working on an issue with a data connector or attribute resolver, you might find:
+
+  ~~~
+  idp.loglevel.idp = DEBUG
+  idp.loglevel.ldap = INFO
+  ~~~
+
+  to be all that you really need, however, you can always take `idp.loglevel.ldap` to DEBUG as well (though be aware, it's quite chatty).
 
 
 
