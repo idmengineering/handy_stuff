@@ -58,6 +58,8 @@ When we say "turn up logging to DEBUG" we really mean that you should adjust one
 
 More information about Shibboleth IdP Logging can be found [on the wiki](https://wiki.shibboleth.net/confluence/display/IDP30/LoggingConfiguration)!
 
+---
+
 ## Shibboleth SP Logging
 
 The Shibboleth SP software writes to two separate diagnostic log files by default, as configured by the `shibd.logger` and `native.logger` logging setup files. The first file governs most of the interesting "SAML" bits, like assertion receipt, decryption, and attribute resolution. These events will be logged into a file named `shibd.log` within the default log directory (unless modified):
