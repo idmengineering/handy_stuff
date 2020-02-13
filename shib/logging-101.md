@@ -40,17 +40,13 @@ When we say "turn up logging to DEBUG" we really mean that you should adjust one
 
 - If you're working on an issue with a data connector or attribute resolver, you might find:
 
-  ~~~
+  ```java
   idp.loglevel.idp = DEBUG
   idp.loglevel.ldap = INFO
-  ~~~
+  ```
 
   to be all that you really need, however, you can always take `idp.loglevel.ldap` to DEBUG as well (though be aware, it's quite chatty).
 
-
-
-
-
-
+> WARNING: There is no reason to keep debug logging turned on in a production environment. This is especially true if you are capturing *raw* or *decrypted* SAML assertions. Don't do it. Tune things back to default by commenting out your changes when you're done! You have been warned.
 
 ## Shibboleth SP Logging
