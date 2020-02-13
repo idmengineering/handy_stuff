@@ -3,7 +3,7 @@
 If you're installing, configuring, or managing a single sign-on environment, you will inevitably find yourself wanting (or needing) to understand what's going on under the hood. That's where log files come in. In this space, we've collected some useful general information about Shibboleth logging for both:
 
 - [Shibboleth Identity Provider](#shibboleth-idp-logging)
-- [Shibboleth Service Provider](#shibboleth-idp-logging)
+- [Shibboleth Service Provider](#shibboleth-sp-logging)
 
 ---
 
@@ -12,6 +12,8 @@ If you're installing, configuring, or managing a single sign-on environment, you
 Logging on Shibboleth IdP is implemented via an abstract layer ([SLF4J](http://slf4j.org/)) which directs control of logging to the [Logback](http://logback.qos.ch/) facility. Since the project depends upon these logging implementations, Shibboleth is somewhat beholden to configuring via these external methods. Thankfully, they are relatively generic and highly customizable.
 
 Logging is configured in `%{idp.home}/conf/logback.xml`, where `%{idp.home}` is the location where Shibboleth IdP is installed (typically, and by default, `/opt/shibboleth-idp`). Importantly, you don't usually need to adjust this file unless you want to make specific changes to the logging constructs, e.g. changing the format of the logged strings. Most of the major settings you'll need to adjust can be edited from `%{idp.home}/conf/idp.properties`.
+
+Logs are stored within `%{idp.home}/logs`.
 
 #### Logging Options for `idp.properties`
 
@@ -54,4 +56,38 @@ When we say "turn up logging to DEBUG" we really mean that you should adjust one
 
 > WARNING: There is no reason to keep debug logging turned on in a production environment. This is especially true if you are capturing *raw* or *decrypted* SAML assertions. Don't do it. Tune things back to default by commenting out your changes when you're done! You have been warned.
 
+More information about Shibboleth IdP Logging can be found [on the wiki](https://wiki.shibboleth.net/confluence/display/IDP30/LoggingConfiguration)!
+
 ## Shibboleth SP Logging
+
+The Shibboleth SP software writes to two separate diagnostic log files by default, as configured by the `shibd.logger` and `native.logger` logging setup files. The first file governs most of the interesting "SAML" bits, like assertion receipt, decryption, and attribute resolution. These events will be logged into a file named `shibd.log` within the default log directory (unless modified):
+
+- Linux systems: `/var/log/shibboleth`
+- Windows systems: `C:\opt\shibboleth-sp\var\log\shibboleth`
+
+`native.logger` controls messages related to RequestMapping, and more often than not isn't needed. However, once caveat is that on Windows systems using IIS the default configuration leads to no creation of a simple `native.log` file. [This can be easily addressed.](shib/iis-native-logger.md)
+
+#### "Debug" Logging
+
+Overall behavior is specified by the `log4j.rootCategory` parm in `shibd.logger`, which is by default:
+
+```
+log4j.rootCategory=INFO, shibd_log, warn_log
+```
+
+bumping this to `DEBUG` is minimally necessary for most debugging.
+
+#### Debugging assertions
+
+If you are interested in seeing the SAML assertions themselves, set:
+
+```
+log4j.category.OpenSAML.MessageDecoder=DEBUG
+log4j.category.OpenSAML.MessageEncoder=DEBUG
+```
+
+by un-commenting these lines in `shibd.loggger`.
+
+> WARNING: There is no reason to keep debug logging turned on in a production environment. This is especially true if you are capturing *raw* or *decrypted* SAML assertions. Don't do it. Tune things back to default by commenting out your changes when you're done! You have been warned.
+
+More information about Shibboleth SP Logging can be found [on the wiki](https://wiki.shibboleth.net/confluence/display/SP3/Logging)!
