@@ -1,6 +1,11 @@
 # Shibboleth Logging 101
 
-If you're installing, configuring, or managing a single sign-on environment, you will inevitably find yourself wanting (or needing) to understand what's going on under the hood. That's where log files come in. In this space, we've collected some useful general information about Shibboleth logging (for both the IdP and SP).
+If you're installing, configuring, or managing a single sign-on environment, you will inevitably find yourself wanting (or needing) to understand what's going on under the hood. That's where log files come in. In this space, we've collected some useful general information about Shibboleth logging for both:
+
+- [Shibboleth Identity Provider](#shibboleth-idp-logging)
+- [Shibboleth Service Provider](#shibboleth-idp-logging)
+
+---
 
 ## Shibboleth IdP Logging
 
