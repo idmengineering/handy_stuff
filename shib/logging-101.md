@@ -8,7 +8,6 @@ Logging on Shibboleth IdP is implemented via an abstract layer ([SLF4J](http://s
 
 Logging is configured in `%{idp.home}/conf/logback.xml`, where `%{idp.home}` is the location where Shibboleth IdP is installed (typically, and by default, `/opt/shibboleth-idp`). Importantly, you don't usually need to adjust this file unless you want to make specific changes to the logging constructs, e.g. changing the format of the logged strings. Most of the major settings you'll need to adjust can be edited from `%{idp.home}/conf/idp.properties`.
 
-<p style="align: center;">
 | variable                | default      | function                                                    |
 |-------------------------|--------------|-------------------------------------------------------------|
 | idp.loghistory          | 180          | Number of days of logs to keep                              |
@@ -22,7 +21,7 @@ Logging is configured in `%{idp.home}/conf/logback.xml`, where `%{idp.home}` is 
 | idp.loglevel.spring     | ERROR        | Log level for Spring Framework (very chatty)                |
 | idp.loglevel.container  | ERROR        | Log level for Tomcat/Jetty (very chatty)                    |
 | idp.loglevel.xmlsec     | INFO         | Set to DEBUG for low-level XML Signing/Encryption logging   |
-</p>
+
 
 
 
