@@ -21,10 +21,15 @@ To get more 'natural' behavior, you can instead define the following appender in
 
 ~~~~
 log4j.appender.native_log=org.apache.log4j.RollingFileAppender
+
 log4j.appender.native_log.fileName=C:/opt/shibboleth-sp/var/log/shibboleth/native.log
+
 log4j.appender.native_log.maxFileSize=1000000
+
 log4j.appender.native_log.maxBackupIndex=10
+
 log4j.appender.native_log.layout=org.apache.log4j.PatternLayout
+
 log4j.appender.native_log.layout.ConversionPattern=%d{%Y-%m-%d %H:%M:%S} %p %c %x: %m%n
 ~~~~
 
