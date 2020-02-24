@@ -6,6 +6,8 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## ADFS ##
 
+- February 24th, 2020 &ndash; [Enabling 'Debug' Logging in ADFS](https://idmengineering.com/enable-debug-logging-adfs/) [ **[Github Link]** ](adfs/enable-debug-logging-adfs.md)
+
 - November 6th, 2019 &ndash; [Releasing NameID with a Specified Format](http://idmengineering.com/adfs-sending-nameid-with-specific-format/) [ **[Github Link]** ](adfs/sending-nameid-with-specific-format.md)
 
 ---
