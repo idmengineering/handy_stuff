@@ -18,7 +18,7 @@ Microsoft Active Directory Federation Services (ADFS) isn't the simplest SAML im
 2. Right-click and select "Disable Log" to stop trace debugging. It is difficult to scroll and search in the events page by page in the debug log, so it is recommended that you save all debug events to a \*.evtx file first.
 3. Open the saved log again and observe that it now includes ADFS Tracing events.
 
-> Not that Trace / Debug logs in ADFS are *very* chatty... and should be used with discretion, and only for the duration of troubleshooting activity, on production servers.
+> Note: Trace/Debug logs in ADFS are *very* chatty... and should be used with discretion, and only for the duration of troubleshooting activity, on production servers.
 
 ## Enable Object Access Auditing to See Access Data
 
