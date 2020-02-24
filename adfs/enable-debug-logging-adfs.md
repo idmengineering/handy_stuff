@@ -7,9 +7,9 @@ Microsoft Active Directory Federation Services (ADFS) isn't the simplest SAML im
 1. Run command prompt as an administrator.
 2. Type the following command:
 
-  ```powershell
-  wevtutil set-log “AD FS Tracing/Debug” /L:5
-  ```
+    ```powershell
+    wevtutil set-log “AD FS Tracing/Debug” /L:5
+    ```
 
 3. Open Event Viewer.
 4. Right-click on Application and Services Logs.
