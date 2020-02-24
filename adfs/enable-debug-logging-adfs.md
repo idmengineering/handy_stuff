@@ -5,7 +5,12 @@ Microsoft Active Directory Federation Services (ADFS) isn't the simplest SAML im
 ## Set Trace level and Enable the ADFS Tracing Log
 
 1. Run command prompt as an administrator.
-2. Type the following command: `wevtutil set-log “AD FS Tracing/Debug” /L:5`
+2. Type the following command:
+
+  ```powershell
+  wevtutil set-log “AD FS Tracing/Debug” /L:5
+  ```
+
 3. Open Event Viewer.
 4. Right-click on Application and Services Logs.
 5. Select View -> "Show Analytics and Debug Logs"
