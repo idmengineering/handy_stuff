@@ -5,20 +5,22 @@ Microsoft Active Directory Federation Services (ADFS) isn't the simplest SAML im
 ## Set Trace level and Enable the ADFS Tracing Log
 
 1. Run command prompt as an administrator.
-2. Type the following command: C:Windowssystem32>wevtutil sl “AD FS Tracing/Debug” /L:5
+2. Type the following command: `wevtutil set-log “AD FS Tracing/Debug” /L:5`
 3. Open Event Viewer.
 4. Right-click on Application and Services Logs.
-5. Select View -> Show Analytics
-6.  Navigate to AD FS Tracing – Debug.
-7. Right-click and select Enable Log to start Trace Debugging immediately.
+5. Select View -> "Show Analytics and Debug Logs"
+6. Navigate to Applications and Services Logs -> AD FS Tracing –> Debug.
+7. Right-click and select "Enable Log" to start trace debugging immediately.
 
 ### To stop tracing, similarly:
 
 1. Follow Steps 1-6 above.
-2. Right-click and select Disable Log to stop Trace Debugging. It is difficult to scroll and search in the events page by page in the Debug Log, so it is recommended that you save all Debug events to a \*.evtx file first.
-3. Open the saved log again and observe that it now includes ADFS Tracing events. These can be analyzed, according to the applicable timestamps, for troubleshooting purposes.
+2. Right-click and select "Disable Log" to stop trace debugging. It is difficult to scroll and search in the events page by page in the debug log, so it is recommended that you save all debug events to a \*.evtx file first.
+3. Open the saved log again and observe that it now includes ADFS Tracing events.
 
-## Enable Object access auditing to see access data in security logs
+> Not that Trace / Debug logs in ADFS are *very* chatty... and should be used with discretion, and only for the duration of troubleshooting activity, on production servers.
+
+## Enable Object Access Auditing to See Access Data
 
 To observe detailed information about access activities on the ADFS servers you must enable object access auditing in two locations on the ADFS servers:
 
