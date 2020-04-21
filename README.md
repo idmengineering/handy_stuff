@@ -10,6 +10,10 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 - November 6th, 2019 &ndash; [Releasing NameID with a Specified Format](http://idmengineering.com/adfs-sending-nameid-with-specific-format/) [ **[Github Link]** ](adfs/sending-nameid-with-specific-format.md)
 
+#### References ####
+
+- [Active Directory LDAP OIDs](https://idmengineering.com/tools/oids.html)
+
 ---
 
 ## CAS ##
