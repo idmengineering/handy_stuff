@@ -125,11 +125,11 @@ URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?saml&pr
 
 You can use AACLI to debug issues related to attribute release... but **why** is a given attribute not being released? Here are some common issues:
 
-    - The attribute isn't being provided by a data connector. This is perhaps because the attribute is `null` for that principal.
-    - There is no attribute definition defined for that attribute. 
-    - The attribute definition does not define a dependency from which to pull the source attribute (i.e. explicitly specify the attribute or say which resolver it's from).
-    - The attribute definition is marked as a dependency only attribute and thus is not released from the resolver.
-    - The attribute definition does not define an encoder appropriate for the given request protocol (i.e. SAML1 encoder exists but SAML2 doesn't).
-    - The attribute is being filtered out by the attribute filter policy. 
+- The attribute isn't being provided by a data connector. This is perhaps because the attribute is `null` for that principal.
+- There is no attribute definition defined for that attribute. 
+- The attribute definition does not define a dependency from which to pull the source attribute (i.e. explicitly specify the attribute or say which resolver it's from).
+- The attribute definition is marked as a dependency only attribute and thus is not released from the resolver.
+- The attribute definition does not define an encoder appropriate for the given request protocol (i.e. SAML1 encoder exists but SAML2 doesn't).
+- The attribute is being filtered out by the attribute filter policy. 
 
 The last point, the lack of an appropriate policy releasing the attribute for a given SP in `attribute-filter.xml` is the *most likely* cause of a missing attribute, and as such should most likely be checked first.
