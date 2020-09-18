@@ -71,7 +71,7 @@ Result:
 
 ---
 
-### Shell Script, Output formatted as SAML 2.0 `<Assertion>`
+### Shell Script, Output formatted as SAML 2.0 Assertion
 
 ```[root@web2.shibdev.idmintegration.com shibboleth-idp]# ./bin/aacli.sh -n kellen -r https://kellen-shibdev.lab.idmintegration.com/shibboleth```
 
@@ -113,9 +113,9 @@ URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?princip
 
 ---
 
-### URL Request,  Output formatted as SAML 2.0 `<Assertion>`
+### URL Request,  Output formatted as SAML 2.0 Assertion
 
-URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?saml&principal=kellen&requester=https%3A%2F%2Fkellen-shibdev.lab.idmintegration.com%2Fshibboleth`
+URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?saml2&principal=kellen&requester=https%3A%2F%2Fkellen-shibdev.lab.idmintegration.com%2Fshibboleth`
 
 <p align="center"><img src="https://idmengineering.com/images/BTX779y.png"></p>
 
