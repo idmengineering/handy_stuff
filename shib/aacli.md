@@ -109,7 +109,7 @@ Result:
 
 URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?principal=kellen&requester=https%3A%2F%2Fkellen-shibdev.lab.idmintegration.com%2Fshibboleth`
 
-<img src="https://idmengineering.com/images/T8yMbzR.png">
+<p align="center"><img src="https://idmengineering.com/images/T8yMbzR.png"></p>
 
 ---
 
@@ -117,7 +117,7 @@ URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?princip
 
 URL: `https://shibdev3.idmintegration.com/idp/profile/admin/resolvertest?saml&principal=kellen&requester=https%3A%2F%2Fkellen-shibdev.lab.idmintegration.com%2Fshibboleth`
 
-<img src="https://idmengineering.com/images/BTX779y.png">
+<p align="center"><img src="https://idmengineering.com/images/BTX779y.png"></p>
 
 ---
 
