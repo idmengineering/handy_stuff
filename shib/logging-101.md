@@ -2,8 +2,13 @@
 
 If you're installing, configuring, or managing a single sign-on environment, you will inevitably find yourself wanting (or needing) to understand what's going on under the hood. That's where log files come in. In this space, we've collected some useful general information about Shibboleth logging for both:
 
-- [Shibboleth Identity Provider](#shibboleth-idp-logging)
-- [Shibboleth Service Provider](#shibboleth-sp-logging)
+- [Shibboleth Logging 101](#shibboleth-logging-101)
+  - [Shibboleth IdP Logging](#shibboleth-idp-logging)
+      - [Logging Options for `idp.properties`](#logging-options-for-idpproperties)
+      - ["Debug" Logging](#debug-logging)
+  - [Shibboleth SP Logging](#shibboleth-sp-logging)
+      - ["Debug" Logging](#debug-logging-1)
+      - [Debugging assertions](#debugging-assertions)
 
 ---
 
@@ -67,7 +72,7 @@ The Shibboleth SP software writes to two separate diagnostic log files by defaul
 - Linux systems: `/var/log/shibboleth`
 - Windows systems: `C:\opt\shibboleth-sp\var\log\shibboleth`
 
-`native.logger` controls messages related to RequestMapping, and more often than not isn't needed. However, once caveat is that on Windows systems using IIS the default configuration leads to no creation of a simple `native.log` file. [This can be easily addressed.](shib/iis-native-logger.md)
+`native.logger` controls messages related to RequestMapping, and more often than not isn't needed. However, once caveat is that on Windows systems using IIS the default configuration leads to no creation of a simple `native.log` file. [This can be easily addressed.](https://idmengineering.com/shibboleth-iis-native-logging/)
 
 #### "Debug" Logging
 
