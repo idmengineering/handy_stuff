@@ -30,6 +30,8 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## Shibboleth ##
 
+- September 18th, 2020 &ndash; [Assessing Attribute Release Policies with AACLI](https://idmengineering.com/aacli/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/aacli.md)
+
 - February 13th, 2020 &ndash; [Shibboleth Logging 101](https://idmengineering.com/shibboleth-logging-101/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/logging-101.md)
 
 - January 31st, 2020 &ndash; [SameSite Cookies and Shibboleth](https://idmengineering.com/samesite-cookies-and-shibboleth/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/samesite-cookie-ramifications.md)
