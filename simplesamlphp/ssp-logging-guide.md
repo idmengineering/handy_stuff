@@ -27,6 +27,8 @@ in which case SSP will write logs to the file `simplesamlphp.log` in the directo
 
 which defaults to `$SSP_DIR/log`.
 
+> Note: you will want to ensure that any directory that you specify for the `loggingdir` has the proper file system permissions. The service account under which your webserver runs will need read, write, and execute permissions for this directory. Since that account typically already owns the `loggingdir` this is usually just a simple matter of: `chmod o+rwx` if you notice that no logging data is being written to the specified directly.
+
 ## Rotation
 
 SimpleSAMLphp won't automatically perform rotation of the `simplesamlphp.log` file... so you must do it manually with a tool such as [**logrotate**](https://www.vultr.com/docs/using-logrotate-to-manage-log-files). For a quick example, after installing `logrotate` if you add the following to `/etc/logrotate.d/simplesamlphp`:
