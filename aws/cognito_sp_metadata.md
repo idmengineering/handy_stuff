@@ -72,7 +72,7 @@ There are many particularities to Cognito attribute mappings, and fortunately, t
 
 The keys are the following:
 
-- Cognito requires an attribute as the SAML `<NameID>` which will be used to uniquely identify the user within Cognito. You don't necessarily need to use this as the **principal** identifier within your application, but it is ideally a useful identifier for a human being to look at (i.e. not a transient: `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`). We recommend requesting some form of "user id" as a persistent identifier (`urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`).
+- Cognito requires an attribute as the SAML <NameID> which will be used to uniquely identify the user within Cognito. You don't necessarily need to use this as the **principal** identifier within your application, but it is ideally a useful identifier for a human being to look at (i.e. not a transient: `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`). We recommend requesting some form of "user id" as a persistent identifier (`urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`).
 
 - Ensure that any attribute mappings that you define in Cognito are properly enumerated within the metadata, as this will assist the IDP deployer in facilitating their configuration of attribute release.
 
@@ -86,38 +86,6 @@ We furthermore strongly encourage the following best practices:
 
   - Really any of the common [LDAP attributes with their associated OIDs](https://ldap.com/ldap-oid-reference-guide/) are likely to be well-supported by most identity providers.
 
-  - Many IDPs also can easily facilitate [common ADFS attributes](http://docs.oasis-open.org/imi/identity/v1.0/os/identity-1.0-spec-os.html#_Toc229451870).
+  - Many IDPs also can easily facilitate common [ADFS attributes](http://docs.oasis-open.org/imi/identity/v1.0/os/identity-1.0-spec-os.html#_Toc229451870).
 
 ## Building the SP Metadata
-
-Now we can construct our metadata... we will use the following elements:
-
-- `$pool_id`
-- `$region`
-- `$domain_prefix` 
-- The `NameID` format we'll request, in this example case: `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`
-- A list of attributes we'll need, in this case we are requesting `mail`, `givenName`, and `sn` using standard LDAP OIDs.
-
-You will then use the following template to substitute your values for `$pool_id`, `$region`, and `$domain_prefix`. 
-
-```xml
-<?xml version="1.0"?>
-<md:EntityDescriptor entityID="urn:amazon:cognito:sp:$pool_id">
-    <md:SPSSODescriptor AuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://$domain_prefix.auth.$region.amazoncognito.com/saml2/idpresponse" index="1"/>
-        <md:AttributeConsumingService index="1">
-            <md:ServiceName xml:lang="en">Cognito Sample SP</md:ServiceName>
-            <md:RequestedAttribute FriendlyName="givenName" Name="urn:oid:2.5.4.42"/>
-            <md:RequestedAttribute FriendlyName="sn" Name="urn:oid:2.5.4.4"/>
-            <md:RequestedAttribute FriendlyName="mail" Name="urn:oid:0.9.2342.19200300.100.1.3"/>
-        </md:AttributeConsumingService>
-    </md:SPSSODescriptor>
-</md:EntityDescriptor>
-```
-
-And substitute your NameID and attribute requirements as in the above examples. Note that the `<md:ServiceName>` element is *not* optional, and you should provide a relevant name for your purposes. Many IDP systems will tolerate the absence of this element, though formally to the spec for the `<AttributeConsumingService>` it is required.
-
-## A Note About Signing
-
-Note that we do not include a certificate within the metadata because Cognito does *not* support signed `<AuthnRequests>`. Hopefully Amazon will overcome this limitation in the future, as some IDP partners **do** require signing of these requests.
