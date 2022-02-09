@@ -4,6 +4,12 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ---
 
+# Security Alerts #
+
+- December 13th, 2021 &ndash; [Log4j Remote Code Execution Vulnerability (CVE-2021-44228)](https://idmengineering.com/log4j_rce_vulnerability_cve-2021-44228/) [ **[Github Link]** ](security/log4j_rce_vulnerability_CVE-2021-44228.md)
+
+---
+
 ## ADFS ##
 
 - February 24th, 2020 &ndash; [Enabling 'Debug' Logging in ADFS](https://idmengineering.com/enable-debug-logging-adfs/) [ **[Github Link]** ](adfs/enable-debug-logging-adfs.md)
@@ -19,6 +25,12 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 ## CAS ##
 
 - January 10th, 2020 &ndash; [Configuring the CAS Management Webapp](https://idmengineering.com/configuring-the-cas-management-webapp/) [ **[Github Link]** ](cas/cas-management-overlay.md)
+
+---
+
+## Cognito ##
+
+- February 9th, 2022 &ndash; [SP Metadata for Amazon Cognito](https://idmengineering.com/sp-metadata-for-amazon-cognito/) [ **[Github Link]** ](cognito/cognito_sp_metadata.md)
 
 ---
 
