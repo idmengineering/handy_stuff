@@ -42,6 +42,8 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## Shibboleth ##
 
+- March 30, 2022 &ndash; [Shibboleth IDP File Permissions](https://idmengineering.com/shibboleth-idp-file-permissions/) [ **[Github Link]**](https://github.com/idmengineering/handy_stuff/blob/master/shib/shib-idp-permissions.md)
+
 - December 2nd, 2021 &ndash; [The Future of Shibboleth SP](https://idmengineering.com/future-of-shibboleth-sp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/future-of-shibboleth-sp.md)
 
 - September 18th, 2020 &ndash; [Assessing Attribute Release Policies with AACLI](https://idmengineering.com/aacli/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/aacli.md)
