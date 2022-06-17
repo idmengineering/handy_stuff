@@ -27,17 +27,17 @@ After installing the extension in your browser one simply needs to activate the 
 
 <p align="center">
     <img src="https://idmengineering.com/images/KE3dETB.png" alt="Screenshot of browser toolbar with SAML-tracer icon visible and highlighted by red arrowing pointing at it.">
-    <figcaption align="center"><small>Figure 1. Mozilla Firefox toolbar with SAML-Tracer icon.</small></figcaption>
     </img>
 </p>
+<p align="center">Figure 1. Mozilla Firefox toolbar with SAML-Tracer icon.</p>
 
 In many browsers you'll need to "pin" the icon to be visible by default, e.g. for Mozilla Firefox, you may find the SAML-Tracer icon hiding under the dropdown that appears when clicking on the two angle brackets to the right side of the image. Also, in a stock Google Chrome installation, for example:
 
 <p align="center">
     <img src="https://idmengineering.com/images/3zVidkn.png" alt="Screenshot of Chrome browser toolbar with SAML-tracer icon visible within extensions dropdown.">
-    <figcaption align="center"><small>Figure 2. Google Chrome toolbar with SAML-Tracer icon hidden in the "puzzle piece" menu.</small></figcaption>
     </img>
 </p>
+<p align="center">Figure 2. Google Chrome toolbar with SAML-Tracer icon hidden in the "puzzle piece" menu.</p>
 
 You can see that the SAML-Tracer extension gets placed in the "Extensions" menu (denoted with a small puzzle piece). You can optionally pin the SAML-Tracer icon to the main toolbar with the "pin" button within that menu.
 
@@ -45,9 +45,9 @@ Once the extension is activated, you'll see a small pop-up window like the follo
 
 <p align="center">
     <img src="https://idmengineering.com/images/a5VaPQy.png" alt="A screenshot of the initial window that opens when activating SAML-Tracer.">
-    <figcaption align="center"><small>Figure 3. An empty SAML-Tracer window.</small></figcaption>
     </img>
 </p>
+<p align="center">Figure 3. An empty SAML-Tracer window.</p>
 
 You'll at this point potentially notice some lines appearing within the top-part of window. Ignore this for now. Go back to your browser, and log into the application you're trying to capture debug information for.
 
@@ -55,9 +55,9 @@ At this point, you'll see **many** more lines appear as your are performing your
 
 <p align="center">
     <img src="https://idmengineering.com/images/2F8mGL9.png" alt="A screenshot of the SAML-Tracer extension showing captured SAML.">
-    <figcaption align="center"><small>Figure 4. A screenshot of the SAML-Tracer extension showing captured SAML.</small></figcaption>
     </img>
 </p>
+<p align="center">Figure 4. A screenshot of the SAML-Tracer extension showing captured SAML.</p>
 
 If, when you click on one of the lines with this logo, and you also click on the "SAML" tab in the lower panel, you see some XML code as shown within the screenshot, then congratulations! You've captured SAML!
 
@@ -67,9 +67,9 @@ In order to share the capture you've just taken, click on the "export" button at
 
 <p align="center">
     <img src="https://idmengineering.com/images/PqgiGYS.png" alt="A screenshot of the SAML-Tracer extension showing the options available for exporting captures.">
-    <figcaption align="center"><small>Figure 5. The SAML-Tracer export options screen.</small></figcaption>
     </img>
 </p>
+<p align="center">Figure 5. The SAML-Tracer export options screen.</p>
 
 **WARNING:** Make sure you either keep the "mask values" option checked, or select "Remove Values". If you chose "None" in this dialog, you will capture any secret parameters that were exchanged in the process, namely plaintext passwords. You do *NOT* need to share a capture with a plaintext password. Removing, or masking the value with a series of ****** are the only advisable options here.
 
