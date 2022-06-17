@@ -69,3 +69,5 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 #### Miscellaneous Cool Stuff from Our Staff ####
 
 - [SSO Support for Busy IT Admins](https://idmengineering.com/sso-support-for-busy-it-admins/) &mdash; Series of blog posts about best-practices to undertake when you're responsible for a Single Sign-On environment. See also: [Part 2](https://idmengineering.com/sso-support-for-busy-it-admins-2-the-lab/), [Part 3](https://idmengineering.com/sso-support-for-busy-it-admins-3-finding-help-when-you-need-it-desperately/), [Part 4](https://idmengineering.com/sso-support-for-busy-it-admins-4-monitoring/), and [Part 5](https://idmengineering.com/sso-support-for-busy-it-admins-5-managing-integrations/).
+
+- [Using SAML-Tracer to Capture SAML Event(s) for Debugging Purposes](https://idmengineering.com/using-saml-tracer) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/howto/using-saml-tracer.md)
