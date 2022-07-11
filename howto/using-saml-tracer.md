@@ -27,7 +27,6 @@ After installing the extension in your browser one simply needs to activate the 
 
 <p align="center">
     <img src="https://idmengineering.com/images/KE3dETB.png" alt="Screenshot of browser toolbar with SAML-tracer icon visible and highlighted by red arrowing pointing at it.">
-    </img>
 </p>
 <p align="center">Figure 1. Mozilla Firefox toolbar with SAML-Tracer icon.</p>
 
@@ -35,7 +34,6 @@ In many browsers you'll need to "pin" the icon to be visible by default, e.g. fo
 
 <p align="center">
     <img src="https://idmengineering.com/images/3zVidkn.png" alt="Screenshot of Chrome browser toolbar with SAML-tracer icon visible within extensions dropdown.">
-    </img>
 </p>
 <p align="center">Figure 2. Google Chrome toolbar with SAML-Tracer icon hidden in the "puzzle piece" menu.</p>
 
@@ -45,7 +43,6 @@ Once the extension is activated, you'll see a small pop-up window like the follo
 
 <p align="center">
     <img src="https://idmengineering.com/images/a5VaPQy.png" alt="A screenshot of the initial window that opens when activating SAML-Tracer.">
-    </img>
 </p>
 <p align="center">Figure 3. An empty SAML-Tracer window.</p>
 
@@ -55,7 +52,6 @@ At this point, you'll see **many** more lines appear as your are performing your
 
 <p align="center">
     <img src="https://idmengineering.com/images/2F8mGL9.png" alt="A screenshot of the SAML-Tracer extension showing captured SAML.">
-    </img>
 </p>
 <p align="center">Figure 4. A screenshot of the SAML-Tracer extension showing captured SAML.</p>
 
@@ -67,7 +63,6 @@ In order to share the capture you've just taken, click on the "export" button at
 
 <p align="center">
     <img src="https://idmengineering.com/images/PqgiGYS.png" alt="A screenshot of the SAML-Tracer extension showing the options available for exporting captures.">
-    </img>
 </p>
 <p align="center">Figure 5. The SAML-Tracer export options screen.</p>
 
