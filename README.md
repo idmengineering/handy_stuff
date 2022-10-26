@@ -6,15 +6,15 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 # Security Alerts #
 
-- December 13th, 2021 &ndash; [Log4j Remote Code Execution Vulnerability (CVE-2021-44228)](https://idmengineering.com/log4j_rce_vulnerability_cve-2021-44228/) [ **[Github Link]** ](security/log4j_rce_vulnerability_CVE-2021-44228.md)
+- December 13th, 2021 &ndash; [Log4j Remote Code Execution Vulnerability (CVE-2021-44228)](https://idmengineering.com/log4j-remote-code-execution-vulnerability/) [ **[Github Link]** ](security/log4j_rce_vulnerability_CVE-2021-44228.md)
 
 ---
 
 ## ADFS ##
 
-- February 24th, 2020 &ndash; [Enabling 'Debug' Logging in ADFS](https://idmengineering.com/enable-debug-logging-adfs/) [ **[Github Link]** ](adfs/enable-debug-logging-adfs.md)
+- February 24th, 2020 &ndash; [Enabling 'Debug' Logging in ADFS](https://idmengineering.com/enabling-debug-logging-in-adfs/) [ **[Github Link]** ](adfs/enable-debug-logging-adfs.md)
 
-- November 6th, 2019 &ndash; [Releasing NameID with a Specified Format](http://idmengineering.com/adfs-sending-nameid-with-specific-format/) [ **[Github Link]** ](adfs/sending-nameid-with-specific-format.md)
+- November 6th, 2019 &ndash; [Releasing NameID with a Specified Format](https://idmengineering.com/releasing-nameid-with-a-specified-format/) [ **[Github Link]** ](adfs/sending-nameid-with-specific-format.md)
 
 #### References ####
 
@@ -24,45 +24,45 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 ## CAS ##
 
-- January 10th, 2020 &ndash; [Configuring the CAS Management Webapp](https://idmengineering.com/configuring-the-cas-management-webapp/) [ **[Github Link]** ](cas/cas-management-overlay.md)
+- January 10th, 2020 &ndash; [Configuring the CAS Management Webapp](https://idmengineering.com/configuring-cas-management-webapp/) [ **[Github Link]** ](cas/cas-management-overlay.md)
 
 ---
 
 ## Cognito ##
 
-- February 9th, 2022 &ndash; [SP Metadata for Amazon Cognito](https://idmengineering.com/sp-metadata-for-amazon-cognito/) [ **[Github Link]** ](cognito/cognito_sp_metadata.md)
+- February 9th, 2022 &ndash; [SP Metadata for Amazon Cognito](https://idmengineering.com/creating-sp-metadata-for-amazon-cognito/) [ **[Github Link]** ](cognito/cognito_sp_metadata.md)
 
 ---
 
 ## OAuth ##
 
-- October 18th, 2019 &ndash; [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-php-oauth-client/) [ **[Github Link]** ](oauth/setting-up-php-oauth-client.md)
+- October 18th, 2019 &ndash; [How to set up PHPLeague OAuth 2.0 Client](https://idmengineering.com/setting-up-a-php-oauth-client/) [ **[Github Link]** ](oauth/setting-up-php-oauth-client.md)
 
 ---
 
 ## Shibboleth ##
 
-- March 30, 2022 &ndash; [Shibboleth IDP File Permissions](https://idmengineering.com/shibboleth-idp-file-permissions/) [ **[Github Link]**](https://github.com/idmengineering/handy_stuff/blob/master/shib/shib-idp-permissions.md)
+- March 30, 2022 &ndash; [Shibboleth IDP File Permissions](https://idmengineering.com/shibboleth-idp-file-system-permissions/) [ **[Github Link]**](https://github.com/idmengineering/handy_stuff/blob/master/shib/shib-idp-permissions.md)
 
-- December 2nd, 2021 &ndash; [The Future of Shibboleth SP](https://idmengineering.com/future-of-shibboleth-sp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/future-of-shibboleth-sp.md)
+- December 2nd, 2021 &ndash; [The Future of Shibboleth SP](https://idmengineering.com/the-future-of-shibboleth-sp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/future-of-shibboleth-sp.md)
 
-- September 18th, 2020 &ndash; [Assessing Attribute Release Policies with AACLI](https://idmengineering.com/aacli/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/aacli.md)
+- September 18th, 2020 &ndash; [Assessing Attribute Release Policies with AACLI](https://idmengineering.com/assessing-attribute-release-policies-with-aacli/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/aacli.md)
 
-- February 13th, 2020 &ndash; [Shibboleth Logging 101](https://idmengineering.com/shibboleth-logging-101/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/logging-101.md)
+- February 13th, 2020 &ndash; [Shibboleth Logging 101](https://idmengineering.com/shibboleth-sp-idp-logging-101/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/logging-101.md)
 
-- January 31st, 2020 &ndash; [SameSite Cookies and Shibboleth](https://idmengineering.com/samesite-cookies-and-shibboleth/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/samesite-cookie-ramifications.md)
+- January 31st, 2020 &ndash; [SameSite Cookies and Shibboleth](https://idmengineering.com/samesite-cookies-shibboleth/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/samesite-cookie-ramifications.md)
 
-- November 20th, 2019 &ndash; [Configuring native.log for Shibboleth SP on IIS](https://idmengineering.com/shibboleth-iis-native-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/iis-native-logger.md)
+- November 20th, 2019 &ndash; [Configuring native.log for Shibboleth SP on IIS](https://idmengineering.com/configuring-native-log-for-shibboleth-sp3-on-iis/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/iis-native-logger.md)
 
-- November 8th, 2019 &ndash; [LDAP SSL/TLS Config for Shibboleth IdP](https://idmengineering.com/ldap-ssl-tls-config-shib-idp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/ldap-ssl-tls-config-shib-idp.md)
+- November 8th, 2019 &ndash; [LDAP SSL/TLS Config for Shibboleth IdP](https://idmengineering.com/ldap-ssl-tls-config-for-shibboleth-idp/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/shib/ldap-ssl-tls-config-shib-idp.md)
 
-- October 24th, 2019 &ndash; [Configuring Reloadable Services for Shibboleth IdP](https://idmengineering.com/configuring-reloadable-services-for-shibboleth/) [ **[Github Link]** ](shib/reloadable-services.md)
+- October 24th, 2019 &ndash; [Configuring Reloadable Services for Shibboleth IdP](https://idmengineering.com/configuring-reloadable-services-for-shibboleth-idp/) [ **[Github Link]** ](shib/reloadable-services.md)
 
 ---
 
 ## SimpleSAMLphp ##
 
-- December 31st, 2019 &ndash; [Configuring SimpleSAMLphp Logging](https://idmengineering.com/configuring-simplesamlphp-logging/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/simplesamlphp/ssp-logging-guide.md)
+- December 31st, 2019 &ndash; [Configuring SimpleSAMLphp Logging](https://idmengineering.com/configuring-simplesamlphp-logging-guide/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/simplesamlphp/ssp-logging-guide.md)
 
 ---
 
@@ -70,4 +70,4 @@ We at IDM Engineering come across a lot of handy bits of information in our day-
 
 - [SSO Support for Busy IT Admins](https://idmengineering.com/sso-support-for-busy-it-admins/) &mdash; Series of blog posts about best-practices to undertake when you're responsible for a Single Sign-On environment. See also: [Part 2](https://idmengineering.com/sso-support-for-busy-it-admins-2-the-lab/), [Part 3](https://idmengineering.com/sso-support-for-busy-it-admins-3-finding-help-when-you-need-it-desperately/), [Part 4](https://idmengineering.com/sso-support-for-busy-it-admins-4-monitoring/), and [Part 5](https://idmengineering.com/sso-support-for-busy-it-admins-5-managing-integrations/).
 
-- [Using SAML-Tracer to Capture SAML Event(s) for Debugging Purposes](https://idmengineering.com/using-saml-tracer) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/howto/using-saml-tracer.md)
+- [Using SAML-Tracer to Capture SAML Event(s) for Debugging Purposes](https://idmengineering.com/how-to-using-saml-tracer-to-capture-saml-events-for-debugging-purposes/) [ **[Github Link]** ](https://github.com/idmengineering/handy_stuff/blob/master/howto/using-saml-tracer.md)
